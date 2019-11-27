@@ -11,6 +11,7 @@ import { CompanyComponent } from './about/company/company.component';
 import { TeamComponent } from './about/team/team.component';
 import { CareerComponent } from './about/career/career.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpModule
     
   ],
   providers: [],

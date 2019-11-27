@@ -1,3 +1,4 @@
+import { ApiservService } from './../Services/apiserv.service';
 import { StreamService } from './../Services/stream.service';
 import { Component, OnInit } from '@angular/core';
 import { CompileShallowModuleMetadata } from '@angular/compiler';
@@ -9,7 +10,7 @@ import { CompileShallowModuleMetadata } from '@angular/compiler';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private mystream:StreamService) { }
+  constructor(private mystream:StreamService , private Api:ApiservService) { }
 
   ngOnInit() {
     this.mystream.streamData().subscribe(      
@@ -25,6 +26,19 @@ export class HomeComponent implements OnInit {
       error =>console.log(error),
       ()=>console.log('Done')
 
+    )
+  }
+  callApi(){
+    this.Api.call().subscribe(
+      next=>{
+        console.log(next);
+      },
+      error=>{
+        console.log(error);
+      },
+      ()=>{
+        console.log('Done')
+      }
     )
   }
 
