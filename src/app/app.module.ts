@@ -13,6 +13,7 @@ import { CareerComponent } from './about/career/career.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HttpModule } from '@angular/http';
 import { SkillComponent } from './skill/skill.component';
+import { StudentsComponent } from './students/students.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { SkillComponent } from './skill/skill.component';
     CareerComponent,
     PagenotfoundComponent,
     SkillComponent,
+    StudentsComponent,
   ],
   imports: [
     BrowserModule,

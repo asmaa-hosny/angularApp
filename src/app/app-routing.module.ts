@@ -1,3 +1,4 @@
+import { StudentsComponent } from './students/students.component';
 import { CompanyComponent } from './about/company/company.component';
 import { TeamComponent } from './about/team/team.component';
 import { CareerComponent } from './about/career/career.component';
@@ -6,7 +7,6 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 import { ContactComponent } from './contact/contact.component';
-import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -21,6 +21,7 @@ export const routes:Routes=[
     {path:'team' , component:TeamComponent },
     {path:'company' , component:CompanyComponent },
   ]},  
+  {path:'student' , component:StudentsComponent },
   {path:'skill' , component:SkillComponent},    
   {path:'contact' , component:ContactComponent}, 
   {path:'**' , component:PagenotfoundComponent}, 

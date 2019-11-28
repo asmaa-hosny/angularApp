@@ -1,0 +1,19 @@
+<p>students works!</p>
+<div style="text-align: center;">
+    <h3>Student Table</h3>
+    <table *ngIf='students' border="1px">
+      <tr>
+       <th>Name</th>
+       <th>Last Name</th>
+       <th>Gender</th>
+       <th>Degree</th>
+     </tr>
+
+     <tr *ngFor='let item of students'>
+       <td>{{  item.firstname  }}</td>
+       <td>{{  item.lastname  }}</td>
+       <td>{{  item.gender  }}</td>
+       <td>{{  item.note  }}</td>
+     </tr>
+    </table>
+</div>
