@@ -12,6 +12,7 @@ import { TeamComponent } from './about/team/team.component';
 import { CareerComponent } from './about/career/career.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HttpModule } from '@angular/http';
+import { SkillComponent } from './skill/skill.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { HttpModule } from '@angular/http';
     TeamComponent,
     CareerComponent,
     PagenotfoundComponent,
+    SkillComponent,
   ],
   imports: [
     BrowserModule,
